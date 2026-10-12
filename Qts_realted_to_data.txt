@@ -1,0 +1,21 @@
+First step is data cleaning:
+
+
+1. Standardized column names by converting them to lowercase and replacing spaces with underscores.
+
+2. Checked for duplicate rows and removed them if present.
+
+3. Checked for invalid values:
+   - price <= 0 : No invalid records found.
+   - area <= 0 : No invalid records found.
+   - bedroom_num <= 0 : Found 2 records.
+
+4. Investigated the 2 records with bedroom_num = 0.
+   - Both were classified as "Studio Apartment".
+   - Since the analysis focuses on properties with bedrooms, studio apartments were removed from the dataset.
+
+5. Verified remaining property types:
+   - Apartment
+   - Independent House
+   - Villa
+   - Independent Floor
